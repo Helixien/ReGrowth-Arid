@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <!-- ================ Biome Arid Shrubland ================ -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildPlants</xpath>
+                    <value>
+						<RG-DE_Plant_AngelWingsCactus>0.25</RG-DE_Plant_AngelWingsCactus>
+						<RG-DE_Plant_BunnyEarCactus>0.25</RG-DE_Plant_BunnyEarCactus>
+                    </value>
+                </li>
+
+				<!-- ================ Biome Desert ================ -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="Desert"]/wildPlants</xpath>
+                    <value>
+						<RG-DE_Plant_AngelWingsCactus>1.0</RG-DE_Plant_AngelWingsCactus>
+						<RG-DE_Plant_BunnyEarCactus>1.2</RG-DE_Plant_BunnyEarCactus>
+                    </value>
+                </li>
+				
+				<!-- ================ Biome Extreme Desert ================ -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/wildPlants</xpath>
+                    <value>
+						<RG-DE_Plant_BunnyEarCactus>0.50</RG-DE_Plant_BunnyEarCactus>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
