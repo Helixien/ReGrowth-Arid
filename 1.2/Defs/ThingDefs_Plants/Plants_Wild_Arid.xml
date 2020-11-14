@@ -1,60 +1,151 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <ThingDef ParentName="PlantBase">
+    <defName>RG-DE_Plant_DesertGrass</defName>
+    <label>grass</label>
+    <description>Wild grass. Grows anywhere there is a little light and minimally fertile ground.</description>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <Flammability>1.3</Flammability>
+      <Nutrition>0.25</Nutrition>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Plant/DesertGrass</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <ingestible />
+    <plant>
+      <fertilityMin>0.05</fertilityMin>
+      <fertilitySensitivity>0.3</fertilitySensitivity>
+      <growDays>2.5</growDays>
+      <leaflessGraphicPath>Things/Plant/Grass_Leafless</leaflessGraphicPath>
+      <harvestWork>40</harvestWork>
+      <maxMeshCount>9</maxMeshCount>
+      <visualSizeRange>0.4~0.6</visualSizeRange>
+      <topWindExposure>0.4</topWindExposure>
+      <wildOrder>1</wildOrder>
+    </plant>
+  </ThingDef>
+
     <ThingDef ParentName="PlantBase">
-        <defName>RG-DE_Plant_AngelWingsCactus</defName>
-        <label>angel wings cactus</label>
-        <description>A short cactus. It is so named because it resembles a pincushion.</description>
+        <defName>RG-DE_Plant_DesertDandelion</defName>
+        <label>dandelions</label>
+        <description>A tiny orange flower which grows in large clusters. Though it is often considered a weed, dandelions in bloom are quite beautiful.</description>
         <statBases>
-            <MaxHitPoints>150</MaxHitPoints>
-            <Nutrition>0.25</Nutrition>
+            <MaxHitPoints>85</MaxHitPoints>
+            <Beauty>4</Beauty>
+            <Nutrition>0.18</Nutrition>
         </statBases>
         <graphicData>
-            <texPath>Things/Plant/AngelWingsCactus</texPath>
+            <texPath>Things/Plant/DesertDandelion</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
-        <selectable>true</selectable>
-        <pathCost>30</pathCost>
+        <hideAtSnowDepth>0.5</hideAtSnowDepth>
         <ingestible />
         <plant>
-            <fertilityMin>0.05</fertilityMin>
-            <fertilitySensitivity>0</fertilitySensitivity>
+            <fertilitySensitivity>0.0</fertilitySensitivity>
             <growDays>2.5</growDays>
-            <visualSizeRange>0.80~1.25</visualSizeRange>
-            <topWindExposure>0.0</topWindExposure>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
+            <fertilityMin>0.05</fertilityMin>
+            <maxMeshCount>25</maxMeshCount>
+            <visualSizeRange>0.3~0.4</visualSizeRange>
+            <topWindExposure>0.3</topWindExposure>
             <wildClusterRadius>4</wildClusterRadius>
-            <wildClusterWeight>4</wildClusterWeight>
-            <maxMeshCount>4</maxMeshCount>
-            <wildOrder>2</wildOrder>
+            <wildClusterWeight>8</wildClusterWeight>
+            <wildOrder>1</wildOrder>
+            <purpose>Beauty</purpose>
         </plant>
     </ThingDef>
 	
     <ThingDef ParentName="PlantBase">
-        <defName>RG-DE_Plant_BunnyEarCactus</defName>
-        <label>bunny ear cactus</label>
-        <description>A short cactus. It is so named because it resembles a pincushion.</description>
+        <defName>RG-DE_Plant_OrangeZyllia</defName>
+        <label>zyllia</label>
+        <description>A beautiful orange flower which grows in clusters. They can only be found in arid and desert biomes.</description>
         <statBases>
-            <MaxHitPoints>150</MaxHitPoints>
-            <Nutrition>0.25</Nutrition>
+            <MaxHitPoints>85</MaxHitPoints>
+            <Beauty>6</Beauty>
+            <Nutrition>0.18</Nutrition>
         </statBases>
         <graphicData>
-            <texPath>Things/Plant/BunnyEarCactus</texPath>
+            <texPath>Things/Plant/OrangeZyllia</texPath>
             <graphicClass>Graphic_Random</graphicClass>
         </graphicData>
-        <selectable>true</selectable>
-        <pathCost>30</pathCost>
+        <hideAtSnowDepth>0.5</hideAtSnowDepth>
         <ingestible />
         <plant>
+            <fertilitySensitivity>0.0</fertilitySensitivity>
+            <growDays>2.5</growDays>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
             <fertilityMin>0.05</fertilityMin>
-            <fertilitySensitivity>0</fertilitySensitivity>
-            <growDays>7.5</growDays>
-            <visualSizeRange>1.8~2.25</visualSizeRange>
-            <topWindExposure>0.0</topWindExposure>
-            <wildClusterRadius>4</wildClusterRadius>
+            <maxMeshCount>25</maxMeshCount>
+            <visualSizeRange>0.3~0.5</visualSizeRange>
+            <topWindExposure>0.3</topWindExposure>
+            <wildClusterRadius>8</wildClusterRadius>
             <wildClusterWeight>4</wildClusterWeight>
-            <maxMeshCount>4</maxMeshCount>
-            <wildOrder>2</wildOrder>
+            <wildOrder>1</wildOrder>
+            <purpose>Beauty</purpose>
         </plant>
     </ThingDef>
+	
+    <ThingDef ParentName="PlantBase">
+        <defName>RG-DE_Plant_PurpleZyllia</defName>
+        <label>zyllia</label>
+        <description>A purple orange flower which grows in clusters. They can only be found in arid and desert biomes.</description>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <Beauty>6</Beauty>
+            <Nutrition>0.18</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/PurpleZyllia</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <hideAtSnowDepth>0.5</hideAtSnowDepth>
+        <ingestible />
+        <plant>
+            <fertilitySensitivity>0.0</fertilitySensitivity>
+            <growDays>2.5</growDays>
+            <sowTags>
+                <li>Ground</li>
+            </sowTags>
+            <fertilityMin>0.05</fertilityMin>
+            <maxMeshCount>25</maxMeshCount>
+            <visualSizeRange>0.3~0.5</visualSizeRange>
+            <topWindExposure>0.3</topWindExposure>
+            <wildClusterRadius>8</wildClusterRadius>
+            <wildClusterWeight>4</wildClusterWeight>
+            <wildOrder>1</wildOrder>
+            <purpose>Beauty</purpose>
+        </plant>
+    </ThingDef>
+	
+  <ThingDef ParentName="TreeBase">
+    <defName>RG-DE_Plant_JoshuaTree</defName>
+    <label>joshua tree</label>
+    <description>A hardwood tree. Oaks take a long time to grow, but their wood is so strong that 'oak' is used as a metaphor for strength across many cultures.</description>
+    <graphicData>
+      <texPath>Things/Plant/JoshuaTree</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.2, 0.35, 0.13)</volume>
+        <offset>(-0.03,0,-0.44)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <plant>
+      <growDays>30</growDays>
+      <harvestWork>1400</harvestWork>
+      <harvestYield>46</harvestYield>
+      <wildClusterWeight>35</wildClusterWeight>
+    </plant>
+  </ThingDef>
 
 </Defs>

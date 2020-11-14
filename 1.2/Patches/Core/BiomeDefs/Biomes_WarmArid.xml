@@ -12,8 +12,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildPlants</xpath>
                     <value>
-						<RG-DE_Plant_AngelWingsCactus>0.25</RG-DE_Plant_AngelWingsCactus>
-						<RG-DE_Plant_BunnyEarCactus>0.25</RG-DE_Plant_BunnyEarCactus>
+						<RG-DE_Plant_DesertDandelion>0.6</RG-DE_Plant_DesertDandelion>
                     </value>
                 </li>
 
@@ -21,16 +20,19 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/BiomeDef[defName="Desert"]/wildPlants</xpath>
                     <value>
-						<RG-DE_Plant_AngelWingsCactus>1.0</RG-DE_Plant_AngelWingsCactus>
-						<RG-DE_Plant_BunnyEarCactus>1.2</RG-DE_Plant_BunnyEarCactus>
-                    </value>
+							<RG-DE_Plant_DesertGrass>12.0</RG-DE_Plant_DesertGrass>
+						<RG-DE_Plant_DesertDandelion>0.6</RG-DE_Plant_DesertDandelion>
+						<RG-DE_Plant_OrangeZyllia>0.3</RG-DE_Plant_OrangeZyllia>
+						<RG-DE_Plant_PurpleZyllia>0.3</RG-DE_Plant_PurpleZyllia>
+						<RG-DE_Plant_JoshuaTree>0.8</RG-DE_Plant_JoshuaTree>
+					</value>
                 </li>
 				
 				<!-- ================ Biome Extreme Desert ================ -->
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/wildPlants</xpath>
                     <value>
-						<RG-DE_Plant_BunnyEarCactus>0.50</RG-DE_Plant_BunnyEarCactus>
+						<RG-DE_Plant_DesertDandelion>0.6</RG-DE_Plant_DesertDandelion>
                     </value>
                 </li>
 
