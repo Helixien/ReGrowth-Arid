@@ -1,43 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Core</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <!-- ================ Biome Arid Shrubland ================ -->
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildPlants</xpath>
-                    <value>
-						<RG-DE_Plant_DesertDandelion>0.6</RG-DE_Plant_DesertDandelion>
-                    </value>
-                </li>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<!-- ================ Biome Arid Shrubland ================ -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildPlants</xpath>
+					<value>
+						<RG-DE_Plant_Zyllia>1.0</RG-DE_Plant_Zyllia>
+						<RG-DE_Plant_DesertFern>2.0</RG-DE_Plant_DesertFern>
+						<RG-DE_Plant_AngelWingsCactus>1.0</RG-DE_Plant_AngelWingsCactus>
+						<RG-DE_Plant_PalmTree>0.6</RG-DE_Plant_PalmTree>
+					</value>
+				</li>
 
 				<!-- ================ Biome Desert ================ -->
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/BiomeDef[defName="Desert"]/wildPlants</xpath>
-                    <value>
-							<RG-DE_Plant_DesertGrass>12.0</RG-DE_Plant_DesertGrass>
-						<RG-DE_Plant_DesertDandelion>0.6</RG-DE_Plant_DesertDandelion>
-						<RG-DE_Plant_OrangeZyllia>0.3</RG-DE_Plant_OrangeZyllia>
-						<RG-DE_Plant_PurpleZyllia>0.3</RG-DE_Plant_PurpleZyllia>
-						<RG-DE_Plant_JoshuaTree>0.8</RG-DE_Plant_JoshuaTree>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="Desert"]/wildPlants</xpath>
+					<value>
+						<RG-DE_Plant_Zyllia>1.5</RG-DE_Plant_Zyllia>
+						<RG-DE_Plant_DesertFern>2.0</RG-DE_Plant_DesertFern>
+						<RG-DE_Plant_AngelWingsCactus>1.0</RG-DE_Plant_AngelWingsCactus>
+						<RG-DE_Plant_PalmTree>0.8</RG-DE_Plant_PalmTree>
 					</value>
-                </li>
-				
-				<!-- ================ Biome Extreme Desert ================ -->
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/wildPlants</xpath>
-                    <value>
-						<RG-DE_Plant_DesertDandelion>0.6</RG-DE_Plant_DesertDandelion>
-                    </value>
-                </li>
-
-            </operations>
-        </match>
-    </Operation>
+				</li>
+			</operations>
+		</match>
+	</Operation>
 
 </Patch>
