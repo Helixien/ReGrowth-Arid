@@ -2,19 +2,19 @@
 <Defs>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>RG-DE_Plant_Zyllia</defName>
-		<label>zyllia</label>
-		<description>A tiny yellow flower which grows in large clusters. Though it is often considered a weed, dandelions in bloom are quite beautiful.</description>
+		<defName>RG-D_Plant_FlowerCactus</defName>
+		<label>flower cactus</label>
+		<description>A tiny cactus with a purple flower growing on it.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
 			<Beauty>4</Beauty>
 			<Nutrition>0.18</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/Zyllia</texPath>
+			<texPath>Things/Plant/FlowerCactus</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
+		<hideAtSnowDepth>0.3</hideAtSnowDepth>
 		<ingestible />
 		<plant>
 			<fertilitySensitivity>0.0</fertilitySensitivity>
@@ -22,10 +22,11 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
-			<fertilityMin>0.05</fertilityMin>
+			<fertilityMin>0.04</fertilityMin>
+			<fertilitySensitivity>0</fertilitySensitivity>
 			<maxMeshCount>25</maxMeshCount>
-			<visualSizeRange>0.3~0.4</visualSizeRange>
-			<topWindExposure>0.3</topWindExposure>
+			<visualSizeRange>0.4~0.7</visualSizeRange>
+			<topWindExposure>0.1</topWindExposure>
 			<wildClusterRadius>4</wildClusterRadius>
 			<wildClusterWeight>8</wildClusterWeight>
 			<wildOrder>1</wildOrder>
@@ -34,41 +35,52 @@
 	</ThingDef>
 
 	<ThingDef ParentName="PlantBase">
-		<defName>RG-DE_Plant_DesertFern</defName>
-		<label>desert fern</label>
-		<description>Wild moss with leafs that grows in clumps in areas of cold temperatures. Moss takes a long time to grow, but is very frost-resistant.</description>
+		<defName>RG-D_Plant_PitahayaCactus</defName>
+		<label>pitahaya</label>
+		<description>A large cactus native to arid Earth environments. It grows a redish fruit that can be cooked or eaten raw.</description>
 		<statBases>
 			<MaxHitPoints>120</MaxHitPoints>
-			<Flammability>0.6</Flammability>
-			<Nutrition>0.15</Nutrition>
+			<Nutrition>0.35</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/DesertFern</texPath>
+			<texPath>Things/Plant/DragonFruitPlant</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.55, 0.2, 0.2)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
 		</graphicData>
-		<hideAtSnowDepth>0.5</hideAtSnowDepth>
-		<ingestible />
+		<selectable>true</selectable>
+		<neverMultiSelect>false</neverMultiSelect>
+		<fillPercent>0.20</fillPercent>
+		<pathCost>30</pathCost>
 		<plant>
+			<lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
 			<fertilityMin>0.05</fertilityMin>
-			<fertilitySensitivity>0.2</fertilitySensitivity>
-			<growDays>15</growDays>
-			<harvestWork>75</harvestWork>
-			<maxMeshCount>4</maxMeshCount>
-			<wildClusterRadius>4</wildClusterRadius>
-			<wildClusterWeight>8</wildClusterWeight>
-			<visualSizeRange>0.9~1.5</visualSizeRange>
-			<topWindExposure>0.3</topWindExposure>
-			<wildOrder>1</wildOrder>
+			<fertilitySensitivity>0.1</fertilitySensitivity>
+			<growDays>6</growDays>
+			<immatureGraphicPath>Things/Plant/Immature/DragonFruitPlant_Immature</immatureGraphicPath>
+			<harvestYield>8</harvestYield>
+			<harvestWork>450</harvestWork>
+			<harvestTag>Standard</harvestTag>
+			<harvestAfterGrowth>0.30</harvestAfterGrowth>
+			<harvestedThingDef>RG-D_RawDragonFruits</harvestedThingDef>
+			<wildClusterRadius>5</wildClusterRadius>
+			<wildClusterWeight>250</wildClusterWeight>
+			<visualSizeRange>0.8~1.4</visualSizeRange>
+			<topWindExposure>0.15</topWindExposure>
+			<wildOrder>2</wildOrder>
+			<purpose>Food</purpose>
 		</plant>
 	</ThingDef>
 
 	<ThingDef ParentName="TreeBase">
-		<defName>RG-DE_Plant_AngelWingsCactus</defName>
+		<defName>RG-D_Plant_AngelWingsCactus</defName>
 		<label>angel wings cactus</label>
-		<description>A large cactus native to arid Earth environments. Though it is not a tree, it yields a small amount of fibrous material that can be used like wood.</description>
+		<description>A small cactus native to arid Earth environments. It's meat can be harvested for food.</description>
 		<statBases>
 			<MaxHitPoints>130</MaxHitPoints>
-			<Nutrition>1.5</Nutrition>
+			<Nutrition>1.2</Nutrition>
 		</statBases>
 		<graphicData>
 			<texPath>Things/Plant/AngelWingsCactus</texPath>
@@ -81,22 +93,24 @@
 		<fillPercent>0.35</fillPercent>
 		<plant>
 			<lifespanDaysPerGrowDays>40</lifespanDaysPerGrowDays>
-			<fertilityMin>0.05</fertilityMin>
+			<fertilityMin>0.02</fertilityMin>
 			<fertilitySensitivity>0</fertilitySensitivity>
 			<growDays>5</growDays>
-			<visualSizeRange>0.7~1.6</visualSizeRange>
-			<harvestWork>300</harvestWork>
+			<visualSizeRange>0.7~1.5</visualSizeRange>
+			<harvestWork>500</harvestWork>
 			<harvestYield>15</harvestYield>
-			<harvestMinGrowth>0.2</harvestMinGrowth>
+			<harvestMinGrowth>0.5</harvestMinGrowth>
+			<harvestedThingDef>RG_RawCactus</harvestedThingDef>
+			<harvestTag>Standard</harvestTag>
 			<topWindExposure>0.08</topWindExposure>
 			<wildClusterRadius>-1</wildClusterRadius>
 		</plant>
 	</ThingDef>
 
 	<ThingDef ParentName="TreeBase">
-		<defName>RG-DE_Plant_PalmTree</defName>
+		<defName>RG-D_Plant_DesertPalmTree</defName>
 		<label>palm tree</label>
-		<description>A hardwood tree. Oaks take a long time to grow, but their wood is so strong that 'oak' is used as a metaphor for strength across many cultures.</description>
+		<description>A desert tree with a tall, naked trunk topped by a cluster of very broad leaves. Unfortunately, this variety doesn't produce any edible coconuts.</description>
 		<graphicData>
 			<texPath>Things/Plant/PalmTree</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
@@ -111,7 +125,7 @@
 		<plant>
 			<growDays>46</growDays>
 			<visualSizeRange>2.2~3.0</visualSizeRange>
-			<harvestWork>1000</harvestWork>
+			<harvestWork>900</harvestWork>
 			<harvestYield>32</harvestYield>
 		</plant>
 	</ThingDef>

@@ -8,25 +8,23 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
-				<!-- ================ Biome Arid Shrubland ================ -->
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildPlants</xpath>
-					<value>
-						<RG-DE_Plant_Zyllia>1.0</RG-DE_Plant_Zyllia>
-						<RG-DE_Plant_DesertFern>2.0</RG-DE_Plant_DesertFern>
-						<RG-DE_Plant_AngelWingsCactus>1.0</RG-DE_Plant_AngelWingsCactus>
-						<RG-DE_Plant_PalmTree>0.6</RG-DE_Plant_PalmTree>
-					</value>
-				</li>
-
 				<!-- ================ Biome Desert ================ -->
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/BiomeDef[defName="Desert"]/wildPlants</xpath>
 					<value>
-						<RG-DE_Plant_Zyllia>1.5</RG-DE_Plant_Zyllia>
-						<RG-DE_Plant_DesertFern>2.0</RG-DE_Plant_DesertFern>
-						<RG-DE_Plant_AngelWingsCactus>1.0</RG-DE_Plant_AngelWingsCactus>
-						<RG-DE_Plant_PalmTree>0.8</RG-DE_Plant_PalmTree>
+						<RG-D_Plant_FlowerCactus>0.5</RG-D_Plant_FlowerCactus>
+						<RG-D_Plant_AngelWingsCactus>1.0</RG-D_Plant_AngelWingsCactus>
+						<RG-D_Plant_DesertPalmTree>0.65</RG-D_Plant_DesertPalmTree>
+						<RG-D_Plant_PitahayaCactus>0.15</RG-D_Plant_PitahayaCactus>
+					</value>
+				</li>
+				<!-- ================ Biome Extreme Desert ================ -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/wildPlants</xpath>
+					<value>
+						<RG-D_Plant_AngelWingsCactus>0.8</RG-D_Plant_AngelWingsCactus>
+						<RG-D_Plant_DesertPalmTree>0.1</RG-D_Plant_DesertPalmTree>
+						<RG-D_Plant_PitahayaCactus>0.04</RG-D_Plant_PitahayaCactus>
 					</value>
 				</li>
 			</operations>
