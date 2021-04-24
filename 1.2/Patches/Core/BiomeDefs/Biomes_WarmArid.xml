@@ -8,6 +8,14 @@
 		<match Class="PatchOperationSequence">
 			<success>Always</success>
 			<operations>
+				<!-- ================ Arid Shrubland ================ -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildPlants</xpath>
+					<value>
+						<RG-D_Plant_FlowerCactus>0.8</RG-D_Plant_FlowerCactus>
+						<RG-D_Plant_AngelWingsCactus>0.4</RG-D_Plant_AngelWingsCactus>
+					</value>
+				</li>
 				<!-- ================ Biome Desert ================ -->
 				<li Class="PatchOperationAdd">
 					<xpath>/Defs/BiomeDef[defName="Desert"]/wildPlants</xpath>

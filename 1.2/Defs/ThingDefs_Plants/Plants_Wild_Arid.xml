@@ -17,13 +17,12 @@
 		<hideAtSnowDepth>0.3</hideAtSnowDepth>
 		<ingestible />
 		<plant>
-			<fertilitySensitivity>0.0</fertilitySensitivity>
+			<fertilitySensitivity>0</fertilitySensitivity>
 			<growDays>2.5</growDays>
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
 			<fertilityMin>0.04</fertilityMin>
-			<fertilitySensitivity>0</fertilitySensitivity>
 			<maxMeshCount>25</maxMeshCount>
 			<visualSizeRange>0.4~0.7</visualSizeRange>
 			<topWindExposure>0.1</topWindExposure>
