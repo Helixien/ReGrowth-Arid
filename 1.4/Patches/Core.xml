@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/terrainsByFertility</xpath>
+				<value>
+					<terrainsByFertility>
+						<li>
+							<terrain>Sand</terrain>
+							<min>-999</min>
+							<max>0.45</max>
+						</li>
+						<li>
+							<terrain>RG_AridSoil</terrain>
+							<min>0.45</min>
+							<max>0.90</max>
+						</li>
+						<li>
+							<terrain>SoilRich</terrain>
+							<min>0.90</min>
+							<max>999</max>
+						</li>
+					</terrainsByFertility>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/BiomeDef[defName = "Desert"]/terrainsByFertility</xpath>
+				<value>
+					<terrainsByFertility>
+						<li>
+							<terrain>Sand</terrain>
+							<min>-999</min>
+							<max>0.80</max>
+						</li>
+						<li>
+							<terrain>RG_AridSoil</terrain>
+							<min>0.80</min>
+							<max>999</max>
+						</li>
+					</terrainsByFertility>
+				</value>
+			</li>
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildPlants/Plant_Grass</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_AridGrass>12.0</RG_Plant_AridGrass>
+					<Plant_DesertDandelion>0.8</Plant_DesertDandelion>
+					<RG_FlowerCactus>0.2</RG_FlowerCactus>
+					<RG_Plant_WingCactus>0.2</RG_Plant_WingCactus>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
