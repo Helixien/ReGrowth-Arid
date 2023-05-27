@@ -53,6 +53,7 @@
 					<Plant_DesertDandelion>0.8</Plant_DesertDandelion>
 					<RG_FlowerCactus>0.2</RG_FlowerCactus>
 					<RG_Plant_WingCactus>0.2</RG_Plant_WingCactus>
+					<RG_Plant_JoshuaTree>0.1</RG_Plant_JoshuaTree>
 				</value>
 			</li>
 			<!--=============== Desert ==============-->
@@ -66,6 +67,7 @@
 					<Plant_DesertDandelion>0.2</Plant_DesertDandelion>
 					<RG_FlowerCactus>0.2</RG_FlowerCactus>
 					<RG_Plant_WingCactus>0.1</RG_Plant_WingCactus>
+					<RG_Plant_JoshuaTree>0.05</RG_Plant_JoshuaTree>
 				</value>
 			</li>
 			<!--=============== Extreme Desert ==============-->
@@ -78,6 +80,7 @@
 					<RG_Plant_AridGrass>8.0</RG_Plant_AridGrass>
 					<RG_FlowerCactus>0.1</RG_FlowerCactus>
 					<RG_Plant_WingCactus>0.05</RG_Plant_WingCactus>
+					<RG_Plant_JoshuaTree>0.025</RG_Plant_JoshuaTree>
 				</value>
 			</li>
 		</operations>

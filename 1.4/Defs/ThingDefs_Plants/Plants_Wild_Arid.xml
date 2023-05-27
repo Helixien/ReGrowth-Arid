@@ -126,13 +126,13 @@
 			<wildClusterRadius>-1</wildClusterRadius>
 		</plant>
 	</ThingDef>
-	<!--=============== Arid Palm Tree ==============-->
-<!--	<ThingDef ParentName="TreeBase">
-		<defName>RG_Plant_AridPalmTree</defName>
-		<label>palm tree</label>
-		<description>A desert tree with a tall, naked trunk topped by a cluster of very broad leaves. Unfortunately, this variety doesn't produce any edible coconuts.</description>
+	<!--=============== Joshua Tree ==============-->
+	<ThingDef ParentName="TreeBase">
+		<defName>RG_Plant_JoshuaTree</defName>
+		<label>joshua tree</label>
+		<description>An arid tree with a sturdy trunk topped by a cluster of long, spiky leaves. This hardy desert dweller has adapted to survive in arid conditions.</description>
 		<graphicData>
-			<texPath>Things/Plant/PalmTree</texPath>
+			<texPath>Things/Plant/JoshuaTree</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.2, 0.35, 0.13)</volume>
@@ -140,13 +140,13 @@
 			</shadowData>
 		</graphicData>
 		<statBases>
-			<Beauty>2</Beauty>
+			<Beauty>1</Beauty>
 		</statBases>
 		<plant>
-			<growDays>46</growDays>
-			<visualSizeRange>2.2~3.0</visualSizeRange>
-			<harvestWork>900</harvestWork>
-			<harvestYield>32</harvestYield>
+			<growDays>15</growDays>
+			<visualSizeRange>1.5~2.5</visualSizeRange>
+			<harvestWork>330</harvestWork>
+			<harvestYield>15</harvestYield>
 		</plant>
-	</ThingDef>-->
+	</ThingDef>
 </Defs>
