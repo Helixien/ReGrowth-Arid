@@ -2,6 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 		<operations>
+			<!--=============== Replace Terrain ==============-->
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/BiomeDef[defName = "AridShrubland"]/terrainsByFertility</xpath>
 				<value>
@@ -41,6 +42,7 @@
 					</terrainsByFertility>
 				</value>
 			</li>
+			<!--=============== Arid Shrubland ==============-->
 			<li Class="PatchOperationRemove">
 				<xpath>/Defs/BiomeDef[defName="AridShrubland"]/wildPlants/Plant_Grass</xpath>
 			</li>
@@ -51,6 +53,31 @@
 					<Plant_DesertDandelion>0.8</Plant_DesertDandelion>
 					<RG_FlowerCactus>0.2</RG_FlowerCactus>
 					<RG_Plant_WingCactus>0.2</RG_Plant_WingCactus>
+				</value>
+			</li>
+			<!--=============== Desert ==============-->
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/BiomeDef[defName="Desert"]/wildPlants/Plant_Grass</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="Desert"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_AridGrass>12.0</RG_Plant_AridGrass>
+					<Plant_DesertDandelion>0.2</Plant_DesertDandelion>
+					<RG_FlowerCactus>0.2</RG_FlowerCactus>
+					<RG_Plant_WingCactus>0.1</RG_Plant_WingCactus>
+				</value>
+			</li>
+			<!--=============== Extreme Desert ==============-->
+			<li Class="PatchOperationRemove">
+				<xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/wildPlants/Plant_Grass</xpath>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/BiomeDef[defName="ExtremeDesert"]/wildPlants</xpath>
+				<value>
+					<RG_Plant_AridGrass>8.0</RG_Plant_AridGrass>
+					<RG_FlowerCactus>0.1</RG_FlowerCactus>
+					<RG_Plant_WingCactus>0.05</RG_Plant_WingCactus>
 				</value>
 			</li>
 		</operations>
