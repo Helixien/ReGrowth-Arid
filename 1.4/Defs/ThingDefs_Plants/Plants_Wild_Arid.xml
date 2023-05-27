@@ -126,4 +126,27 @@
 			<wildClusterRadius>-1</wildClusterRadius>
 		</plant>
 	</ThingDef>
+	<!--=============== Arid Palm Tree ==============-->
+<!--	<ThingDef ParentName="TreeBase">
+		<defName>RG_Plant_AridPalmTree</defName>
+		<label>palm tree</label>
+		<description>A desert tree with a tall, naked trunk topped by a cluster of very broad leaves. Unfortunately, this variety doesn't produce any edible coconuts.</description>
+		<graphicData>
+			<texPath>Things/Plant/PalmTree</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+			<shadowData>
+				<volume>(0.2, 0.35, 0.13)</volume>
+				<offset>(-0.03,0,-0.44)</offset>
+			</shadowData>
+		</graphicData>
+		<statBases>
+			<Beauty>2</Beauty>
+		</statBases>
+		<plant>
+			<growDays>46</growDays>
+			<visualSizeRange>2.2~3.0</visualSizeRange>
+			<harvestWork>900</harvestWork>
+			<harvestYield>32</harvestYield>
+		</plant>
+	</ThingDef>-->
 </Defs>

@@ -82,7 +82,7 @@
 			<Nutrition>1.2</Nutrition>
 		</statBases>
 		<graphicData>
-			<texPath>Things/Plant/AngelWingsCactus</texPath>
+			<texPath>Things/Plant/WingsCactus</texPath>
 			<graphicClass>Graphic_Random</graphicClass>
 			<shadowData>
 				<volume>(0.24, 0.3, 0.15)</volume>
