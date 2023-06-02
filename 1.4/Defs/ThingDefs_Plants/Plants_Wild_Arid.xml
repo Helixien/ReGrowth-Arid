@@ -83,6 +83,8 @@
 			<sowTags>
 				<li>Ground</li>
 			</sowTags>
+			<sowResearchPrerequisites/>
+			<mustBeWildToSow>true</mustBeWildToSow>
 			<fertilityMin>0.04</fertilityMin>
 			<maxMeshCount>25</maxMeshCount>
 			<visualSizeRange>0.3~0.6</visualSizeRange>
