@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 670291014
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 5c5b06e982a8f1ff4fdace83f6f38ba1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7859cd501ea75098bcf7e53f1b477c26
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/2466442910/Textures/Things/Plant/DesertGrass/DesertGrassB.psd
+- Assets/Data/ReGrowth2-Arid/Textures/Things/Plant/FlowerCactus/FlowerCactusE.psd
+- Assets/Data/2466442910/Textures/Things/Plant/FlowerCactus/FlowerCactusA.psd
+- Assets/Data/2466442910/Textures/Things/Plant/FlowerCactus/FlowerCactusB.psd
+- Assets/Data/2466442910/Textures/Things/Plant/DesertGrass/DesertGrassC.psd
+- Assets/Data/2466442910/Textures/Things/Plant/FlowerCactus/FlowerCactusD.psd
+- Assets/Data/ReGrowth2-Arid/Textures/Things/Plant/FlowerCactus/FlowerCactusA.psd
+- Assets/Data/ReGrowth2-Arid/Textures/Things/Plant/FlowerCactus/FlowerCactusD.psd
+- Assets/Data/2466442910/Textures/Things/Plant/FlowerCactus/FlowerCactusC.psd
+- Assets/Data/ReGrowth2-Arid/Textures/Things/Plant/DesertGrass/DesertGrassC.psd
+- Assets/Data/2466442910/Textures/Things/Plant/FlowerCactus/FlowerCactusE.psd
+- Assets/Data/ReGrowth2-Arid/Textures/Things/Plant/DesertGrass/DesertGrassA.psd
+- Assets/Data/ReGrowth2-Arid/Textures/Things/Plant/DesertDandelion/DesertDandelionA.psd
+- Assets/Data/ReGrowth2-Arid/Textures/Things/Plant/DesertGrass/DesertGrassB.psd
+- Assets/Data/2466442910/Textures/Things/Plant/DesertDandelion/DesertDandelionC.psd
+- Assets/Data/ReGrowth2-Arid/Textures/Things/Plant/FlowerCactus/FlowerCactusC.psd
+- Assets/Data/ReGrowth2-Arid/Textures/Things/Plant/FlowerCactus/FlowerCactusB.psd
+- Assets/Data/ReGrowth2-Arid/Textures/Things/Plant/DesertDandelion/DesertDandelionC.psd
+- Assets/Data/ReGrowth2-Arid/Textures/Things/Plant/DesertDandelion/DesertDandelionB.psd
+- Assets/Data/2466442910/Textures/Things/Plant/DesertGrass/DesertGrassA.psd
+- Assets/Data/ReGrowth2-Arid/Textures/Things/Plant/DesertGrass/DesertGrassD.psd
+- Assets/Data/2466442910/Textures/Things/Plant/DesertDandelion/DesertDandelionA.psd
+- Assets/Data/2466442910/Textures/Things/Plant/DesertDandelion/DesertDandelionB.psd
+- Assets/Data/2466442910/Textures/Things/Plant/DesertGrass/DesertGrassD.psd
+Dependencies: []
